@@ -12,14 +12,14 @@
 </head>
 <body>
     <%- include('Navbar') %>
-  <div class="container">
-    <h1>Budget Tracker</h1>
+  <div class="container border p-5 text-center" style="width: fit-content;height: 100%;font-size: 3rem;">
+    <h1 style="font-size: 3rem;">Budget Tracker</h1>
     <form method="post">
       <div class="form-group">
         <label for="budgetInput">Set Your Desired Budget:</label>
-        <input type="number" name="budget" class="form-control" id="budgetInput" placeholder="Enter your budget">
+        <input style="width: fit-content;font-size: 2rem;" type="number" name="budget" class="m-auto form-control text-center id="budgetInput" placeholder="Enter your budget">
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary" style="font-size: 2rem;">Submit</button>
     </form>
     <a href="/Expense">Don't want to update budget , click here</a>
   </div>
