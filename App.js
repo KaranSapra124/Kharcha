@@ -113,12 +113,7 @@ app.post('/Expense', (req, res) => {
         .then(() => {
             Expense.save()
             console.log("Posted");
-            NewExp.find({})
-                .then((docs) => {
-                    req.body.ExpName = ""
-                    req.body.ExpAmt = ""
-                    res.render("ExpenseTracker", { Exp: docs })
-                })
+           res.redirect('/Expense')
         })
         .catch((err) => {
             console.log(err);
