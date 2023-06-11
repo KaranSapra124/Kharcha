@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Nav {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.Nav > button > .navbar-toggler-icon{
+    color: white;
+    
+}
+
+
+#navbarNav>ul>li>a {
+    color: white;
+    font-weight: bold;
+    
+}
+
+.main{
+    padding: 10px;
+}
+
+
+.AccountSetup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AccountSetup > ul > li > a{
+    background-color: #fff;
+    color: black;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.blockquote{
+    border: 2px solid black;
+    padding: 5%;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
+
+.carousel-inner{
+   width: 100vw;
+   justify-content: center;
+}

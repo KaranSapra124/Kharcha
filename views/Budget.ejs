@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+    <%- include('Navbar') %>
+  <div class="container">
+    <h1>Budget Tracker</h1>
+    <form method="post">
+      <div class="form-group">
+        <label for="budgetInput">Set Your Desired Budget:</label>
+        <input type="number" name="budget" class="form-control" id="budgetInput" placeholder="Enter your budget">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <a href="/Expense">Don't want to update budget , click here</a>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
