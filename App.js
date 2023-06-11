@@ -62,15 +62,15 @@ app.post('/Login', (req, res) => {
     email = req.body.Email
     User.find({ Email: req.body.Email })
         .then((docs) => {
-            console.log("Found");
-            console.log(docs);
+            // console.log("Found");
+            // console.log(docs);
             if (docs[0].Password === md5(md5(req.body.pass))) {
                 console.log(docs);
                 Notifier.notify("Login Success")
                 res.redirect('/Budget')
             }
             else {
-                console.log("Nothing Found");
+                // console.log("Nothing Found");
                 Notifier.notify("Wrong Password or email");
                 return res.redirect('/Login')
             }
