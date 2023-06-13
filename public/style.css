@@ -9,37 +9,45 @@
     padding: 10px;
 }
 
-.Nav > button > .navbar-toggler-icon{
+.Nav>button>.navbar-toggler-icon {
     color: white;
-    
+
 }
 
+#navbarNav>ul {
+    margin: auto;
+}
 
 #navbarNav>ul>li>a {
     color: white;
     font-weight: bold;
-    
+    font-size: medium;
 }
 
-.main{
+.navbar>img {
+    width: 10%;
+}
+
+.main {
     padding: 10px;
 }
 
 
-.AccountSetup{
+.AccountSetup {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.AccountSetup > ul > li > a{
+.AccountSetup>ul>li>a {
     background-color: #fff;
     color: black;
     padding: 5px;
     font-weight: bolder;
+    font-size: medium;
 }
 
-.blockquote{
+.blockquote {
     border: 2px solid black;
     padding: 5%;
     height: fit-content;
@@ -49,7 +57,33 @@
 
 
 
-.carousel-inner{
-   width: 100vw;
-   justify-content: center;
+.carousel-inner {
+    width: 100vw;
+    justify-content: center;
+}
+
+.row {
+    margin: auto;
+}
+
+@media screen and (max-width:400px) {
+    .navbar>img {
+        width: 30%;
+    }
+
+    .navbar>img {
+        display: inline;
+    }
+
+    .Nav>button>.navbar-toggler-icon {
+        color: #fff;
+        height: 20px;
+        width: 20px;
+        float: right;
+
+    }
+
+    .nav-item {
+        font-size: 2.5rem;
+    }
 }
