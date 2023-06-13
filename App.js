@@ -65,7 +65,7 @@ app.post('/Login', (req, res) => {
             // console.log("Found");
             // console.log(docs);
             if (docs[0].Password === md5(md5(req.body.pass))) {
-                console.log(docs);
+                // console.log(docs);
                 Notifier.notify("Login Success")
                 res.redirect('/Budget')
             }
@@ -92,8 +92,8 @@ app.get("/", (req, res) => {
     res.render("index")
 })
 app.get('/Expense', (req, res) => {
-    console.log(email);
-    console.log(BudgetVal);
+    // console.log(email);
+    // console.log(BudgetVal);
     NewExp.find({ Email: email })
         .then((docs) => {
             // console.log(docs);
@@ -112,7 +112,7 @@ app.post('/Expense', (req, res) => {
     NewExp.find({})
         .then(() => {
             Expense.save()
-            console.log("Posted");
+            // console.log("Posted");
            res.redirect('/Expense')
         })
         .catch((err) => {
